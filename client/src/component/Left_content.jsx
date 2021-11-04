@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button} from "@mui/material";
 import styles from './leftContent.module.css';
+import axios from "axios";
 
 
 
@@ -29,6 +30,14 @@ class LeftContent extends Component {
     }
     componentDidMount() {
        console.log('dd');
+       axios
+           .get('/api/left_content')
+           .then( result => {
+               console.log(result);
+           })
+           .catch(errors => {
+               console.log(errors)
+           })
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
        console.log('업데이트')
