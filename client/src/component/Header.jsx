@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter,Router,Link,Switch} from "react-router-dom";
+
 import {withStyles} from "@mui/styles";
 const styles = them =>({
     nav:{
@@ -20,23 +20,21 @@ class Header extends Component {
     render() {
         const {classes} = this.props;
         return (
-            <BrowserRouter>
-                <header>
-                    <nav>
-                        <ul  className={classes.nav}>
-                            <li className={classes.item}>
-                                스터디1
-                            </li>
-                            <li className={classes.item}>
-                                스터디2
-                            </li>
-                            <li className={classes.item}>
-                                스터디3
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-            </BrowserRouter>
+            <header>
+                <nav>
+                    <ul  className={classes.nav}>
+                        <li className={classes.item}>
+                            스터디1
+                        </li>
+                        <li className={classes.item}>
+                            스터디2
+                        </li>
+                        <li className={classes.item}>
+                            스터디3
+                        </li>
+                    </ul>
+                </nav>
+            </header>
         );
     }
 }

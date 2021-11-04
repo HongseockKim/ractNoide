@@ -30,16 +30,20 @@ class LeftContent extends Component {
     componentDidMount() {
        console.log('dd');
     }
-    componentDidUpdate() {
+    componentDidUpdate(prevProps, prevState, snapshot) {
        console.log('업데이트')
+        console.log(prevState)
     }
 
     render() {
-        const{classes} = this.props;
+        const{classes,text} = this.props;
         const {open} = this.state;
         return (
             <div className={open ? styles.position_box_on :styles.position_box }>
                 <Button onClick={this.tabIncrement} variant={"contained"} class={styles.modal_btn} type="button">{open ? '닫기':'열기'}</Button>
+               <div className={styles.content}>
+                   <h3>{text}</h3>
+               </div>
             </div>
         );
     }

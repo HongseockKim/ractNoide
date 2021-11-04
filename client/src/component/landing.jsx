@@ -19,7 +19,7 @@ class Landing extends Component {
             <div>
                 <Paper elevation={3} className={classes.paper}>
                     <Header/>
-                    <Content title={'content'}/>
+                    <Content title={'Content'}/>
                 </Paper>
             </div>
         );
