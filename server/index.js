@@ -21,10 +21,10 @@
     })
     app.get('/api/left_content',(req,res) => {
         res.json([
-            {id:1,name:'제목',text:'공부하자'},
-            {id:2,name:'제목',text:'사랑하자'},
-            {id:3,name:'제목',text:'계속공부하자'},
-            {id:4,name:'제목',text:'자기관리'},
+            {id:1,name:'제목',text:'공부하자',src:'https://picsum.photos/seed/picsum/200'},
+            {id:2,name:'제목',text:'사랑하자',src:'https://picsum.photos/seed/picsum/200'},
+            {id:3,name:'제목',text:'계속공부하자',src:'https://picsum.photos/seed/picsum/200'},
+            {id:4,name:'제목',text:'자기관리',src:'https://picsum.photos/seed/picsum/200'},
         ])
     })
 

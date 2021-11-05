@@ -13,7 +13,7 @@ const styles =theme =>({
     },
     title:{
         fontSize:'32px',
-    }
+    },
 });
 
 class Content extends Component {
