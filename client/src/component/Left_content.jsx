@@ -80,7 +80,7 @@ class LeftContent extends Component {
         console.log(data)
         return (
             <div className={open ? styles.position_box_on :styles.position_box }>
-                <Button onClick={this.tabIncrement} variant={"contained"} class={styles.modal_btn} type="button">{open ? '닫기':'열기'}</Button>
+                <Button onClick={this.tabIncrement} variant={"contained"} className={styles.modal_btn} type="button">{open ? '닫기':'열기'}</Button>
                <div className={styles.content}>
                    <h3>{text}</h3>
                    <Button type="button" variant={"contained"} size={"large"} onClick={this.handleClick}>버튼</Button>
