@@ -27,6 +27,7 @@ export default connect(
         return {
             onClick: function(){
                 dispatch({type: 'CHANGE_MODE',mode:"WELCOME"})
+                //액션 타입은 체인지 모드 이고 모드는 웰컴으로 바꾼다는것
             }
         }
     })(TestRedux);

@@ -14,9 +14,12 @@ let initState = {
     ]
 }
 function reducer(state=initState,action) {
+//state:=initState 는 state 가 ubdfinde 일때 기본 인수를 사용하겠다는 뜻
+//두번째 인자는 액션
 
 
     if(action.type === "CHANGE_MODE"){
+        //액션 타입이 체인지 모드 일때는  state 모드는 액션 모드로 바꾼다는거임
         return {...state,mode:action.mode};
     }
 
