@@ -3,16 +3,6 @@ import {withStyles} from "@mui/styles";
 import LeftContent from "./Left_content";
 import axios from "axios";
 import styled from "styled-components";
-const Div = styled.div`
-background:red;width:100px;height:100px;
-& p {
-font-size:24px;
-}
-& .box{
-width:50px;height:50px;background:blue;
-margin-left:150px;
-}
-`;
 
 const styles =theme =>({
     content:{
@@ -70,11 +60,6 @@ class Content extends Component {
         const {test,text} = this.state;
 
         return (
-            <>
-            <Div>
-                <p>스타일컴포넌트 테스트</p>
-                <div className="box"></div>
-            </Div>
             <div className={classes.content}>
                 <LeftContent
                     text ={text}
@@ -84,7 +69,6 @@ class Content extends Component {
                 <p>{text}</p>
                 <button type="button" onClick={this.handleClick}>버튼</button>
             </div>
-            </>
         );
     }
 }
